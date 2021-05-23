@@ -1,4 +1,5 @@
 import Nav from './Nav'
+import Header from './Header'
 import layoutStyles from '../styles/Layout.module.css'
 
 const Layout = ({children}) => {
@@ -8,6 +9,7 @@ const Layout = ({children}) => {
             
             <div className={layoutStyles.container}>
             <main styles={layoutStyles.main}>
+                <Header />
                 {children}
             </main>
         </div>
